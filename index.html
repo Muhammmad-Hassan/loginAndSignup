@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="loginForm" class="form-group">
+            <h2>Login</h2>
+
+            <div class="form-group">
+
+                <input placeholder="Email Address" type="email" id="loginEmail">
+            </div>
+            <div class="form-group">
+
+                <input placeholder="Password" type="password" id="loginPassword">
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="login()">Login</button>
+            </div>
+            <div class="login-signup-toggle">
+                <span>Don't have an account? <a href="#" onclick="showOtherFrom('signupForm')">Sign up</a></span>
+            </div>
+        </form>
+
+        <form id="signupForm" class="form-group" style="display: none;">
+            <h2>Sign Up</h2>
+            <div class="form-group">
+
+                <input placeholder="Name" type="text" id="signupName">
+            </div>
+            <div class="form-group">
+
+                <input placeholder="Email Address" type="email" id="signupEmail">
+            </div>
+            <div class="form-group">
+
+                <input placeholder="Password" type="password" id="signupPassword">
+            </div>
+            <div class="form-group">
+
+                <input placeholder="Confirm password" type="password" id="signupConfirmPassword">
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="signup()">Sign Up</button>
+            </div>
+            <div class="login-signup-toggle">
+                <span>Already have an account? <a href="#" onclick="showOtherFrom('loginForm')">Login</a></span>
+            </div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
